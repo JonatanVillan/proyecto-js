@@ -1,31 +1,47 @@
-/* const TNA = 137.5;
-const TEA = 267.92;
-const CFTEA = 375.6;
-const descuentoEstudiante = 10;
-const montoSolicitadoMax = 5000000;
-let interesPaquete;
-let interesCuota;
-let estudiante = "NO";
+alert("Bienvenido a nuestro e commerce");
 
-// Preguntar si sos Estudiante de Coder
-let sosEstudiante = ingresarEstudiante();
+let inicio = prompt("desea iniciar una compra?");
 
-// Preguntar por tu Tipo de Paquete
-let tipoPaquete = ingresarTipoPaquete();
-interesPaquete = calcularInteresPaquete(tipoPaquete);
+while (inicio != "si" && inicio != "no") {
+  alert("Debes ingresar una respuesta valida!");
+  inicio = prompt("desea iniciar una compra?");
+}
 
-// Preguntar por el Monto del Préstamo
-let montoSolicitado = ingresarMontoSolicitado();
+if (inicio == "si") {
+  alert("sumemos productos al carrito");
 
-// Preguntar por la Cantidad de Cuotas
-let cuotas = solicitarCuotas();
-interesCuota = calcularInteresCuota(cuotas);
+  let producto = prompt(
+    "ingrese el producto a agregar: \n1- remera\n2- buzo\n3- jean\n4- zapatillas\n5- short"
+  );
 
-// Cálculos de Interes
-let valorCuota = calculoValorCuota();
-
-// Salida
-let salida = informarCalculoPrestamo();
-alert(salida);
-console.log(salida);
-  */
+  while (inicio === "si") {
+    producto = prompt(
+      "ingrese el producto a agregar: \n1- remera\n2- buzo\n3- jean\n4- zapatillas\n5- short\n6 salir"
+    );
+    switch (producto) {
+      case "remera":
+        let prod_agregados = producto + 1;
+        break;
+      case "buzo":
+        alert("agrego buzo al carrito");
+        break;
+      case "jean":
+        alert("agrego jean al carrito");
+        break;
+      case "zapatillas":
+        alert("agrego zapatillas al carrito");
+        break;
+      case "short":
+        alert("agrego short al carrito");
+        break;
+      case "salir":
+        alert("finalizando compra");
+        break;
+      default:
+        alert("no se encontro producto");
+        break;
+    }
+  }
+} else if (inicio == "no") {
+  alert("te esperamos la proxima!");
+}

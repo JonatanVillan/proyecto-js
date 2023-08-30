@@ -1,3 +1,5 @@
+//ESTE ARCHIVO SE USO COMO BORRADOR DE PRACTICA NO TENER EN CUENTA
+
 //////////////////
 //alert("Bienvenido a nuestro e commerce");
 
@@ -69,7 +71,7 @@ if (producto == "harina" || producto == "fideos" || producto == "carne" || produ
 
 ////////////////////
 
-let inicio = prompt("desea iniciar una compra?");
+/* let inicio = prompt("desea iniciar una compra?");
 
 while (inicio != "si" && inicio != "no") {
   alert("Debes ingresar una respuesta valida!");
@@ -112,3 +114,4 @@ if (inicio == "si") {
 } else if (inicio == "no") {
   alert("te esperamos la proxima!");
 }
+ */
